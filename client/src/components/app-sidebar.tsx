@@ -43,7 +43,7 @@ const data = {
   navMain: [
     {
       title: "Main",
-      url: "/",
+      url: "/homepage",
       icon: IconHome,
     },
     {
@@ -168,7 +168,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             >
               <a href="#">
                 <IconInnerShadowTop className="!size-5" />
-                <span className="text-base font-semibold">Projex.</span>
+                <span className="text-base font-semibold">SyncVoid.</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
