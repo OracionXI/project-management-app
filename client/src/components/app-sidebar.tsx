@@ -12,7 +12,9 @@ import {
   IconHelp,
   IconHome,
   IconInnerShadowTop,
+  IconList,
   IconListDetails,
+  IconLock,
   IconReport,
   IconSearch,
   IconSettings,
@@ -33,17 +35,18 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import { usePathname } from "next/navigation";
 
 const data = {
   user: {
     name: "Tiham",
     email: "tiham@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/demo-dp.jpg",
   },
   navMain: [
     {
       title: "Main",
-      url: "/homepage",
+      url: "/main",
       icon: IconHome,
     },
     {
@@ -63,13 +66,30 @@ const data = {
     },
     {
       title: "Projects",
-      url: "#",
+      url: "/project",
       icon: IconFolder,
     },
     {
       title: "Team",
       url: "/team",
       icon: IconUsers,
+    },
+  ],
+  settingsPrimary: [
+    {
+      title: "Profile",
+      url: "/settings/profile",
+      icon: IconUsers,
+    },
+    {
+      title: "Account",
+      url: "/settings/account",
+      icon: IconLock,
+    },
+    {
+      title: "Display",
+      url: "/settings/display",
+      icon: IconList,
     },
   ],
   navClouds: [
@@ -123,8 +143,25 @@ const data = {
   navSecondary: [
     {
       title: "Settings",
-      url: "#",
+      url: "/settings/profile",
       icon: IconSettings,
+    },
+    {
+      title: "Get Help",
+      url: "#",
+      icon: IconHelp,
+    },
+    {
+      title: "Search",
+      url: "#",
+      icon: IconSearch,
+    },
+  ],
+  settingsSecondary: [
+    {
+      title: "Dashboard",
+      url: "/dashboard",
+      icon: IconDashboard,
     },
     {
       title: "Get Help",
@@ -157,6 +194,8 @@ const data = {
 };
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const pathname = usePathname();
+  const isSettingsPage = pathname?.startsWith("/settings");
   return (
     <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
@@ -166,7 +205,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="#">
+              <a href="/landing">
                 <IconInnerShadowTop className="!size-5" />
                 <span className="text-base font-semibold">SyncVoid.</span>
               </a>
@@ -175,9 +214,18 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <NavDocuments items={data.documents} />
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
+        {isSettingsPage ? (
+          <>
+            <NavMain items={data.settingsPrimary} />
+            <NavSecondary items={data.settingsSecondary} className="mt-auto" />
+          </>
+        ) : (
+          <>
+            <NavMain items={data.navMain} />
+            <NavDocuments items={data.documents} />
+            <NavSecondary items={data.navSecondary} className="mt-auto" />
+          </>
+        )}
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
