@@ -8,11 +8,17 @@ export function SignupForm({
   ...props
 }: React.ComponentProps<"form">) {
   return (
-    <form className={cn("flex flex-col gap-6", className)} {...props}>
+    <form
+      className={cn(
+        "flex flex-col gap-6 mb-6 max-w-md mx-auto overflow-y-auto max-h-[80vh]", // Added scrolling with max height
+        className
+      )}
+      {...props}
+    >
       <div className="flex flex-col items-center gap-2 text-center">
         <h1 className="text-2xl font-bold">Create an account</h1>
         <p className="text-muted-foreground text-sm text-balance">
-          Enter a email and a password below to create an account
+          Enter an email and a password below to create an account
         </p>
       </div>
       <div className="grid gap-6">
@@ -40,7 +46,7 @@ export function SignupForm({
         </div>
         <div className="grid gap-3">
           <Label htmlFor="confirm-password">Confirm Password</Label>
-          <Input id="password" type="password" required />
+          <Input id="confirm-password" type="password" required />
         </div>
         <Button type="submit" className="w-full">
           Create an account
