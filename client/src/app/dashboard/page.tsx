@@ -1,8 +1,15 @@
 import { ChartAreaInteractive } from "@/components/chart-area-interactive";
-import { DataTable } from "@/components/data-table";
+import { DataTable } from "@/components/data-table/data-table";
 import { SectionCards } from "@/components/section-cards";
 
-import data from "./data.json";
+import { columns } from "@/components/data-table/columns";
+import data from "@/components/data/tasks.json";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dashboard",
+  description: "Dashboard",
+};
 
 export default function Dashboard() {
   return (
@@ -13,7 +20,9 @@ export default function Dashboard() {
           <div className="px-4 lg:px-6">
             <ChartAreaInteractive />
           </div>
-          <DataTable data={data} />
+          <div className="px-4 lg:px-6">
+            <DataTable data={data} columns={columns} />
+          </div>
         </div>
       </div>
     </div>

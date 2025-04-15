@@ -1,5 +1,11 @@
 import { ForgotPasswordForm } from "@/components/auth/forgot-password-form";
 import { GalleryVerticalEnd } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Forgot Password",
+  description: "Forgot Password",
+};
 
 export default function ForgotPasswordPage() {
   return (

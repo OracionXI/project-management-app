@@ -1,0 +1,162 @@
+[
+  {
+    "id": "TASK-1D2K",
+    "title": "Fix login button responsiveness",
+    "type": "bug",
+    "status": "in progress",
+    "priority": "high",
+    "reviewer": "Alice Johnson"
+  },
+  {
+    "id": "TASK-7H5S",
+    "title": "Add dark mode toggle",
+    "type": "feature",
+    "status": "todo",
+    "priority": "medium",
+    "reviewer": "Bob Smith"
+  },
+  {
+    "id": "TASK-9K1T",
+    "title": "Update README with setup instructions",
+    "type": "documentation",
+    "status": "done",
+    "priority": "low",
+    "reviewer": "Assign reviewer"
+  },
+  {
+    "id": "TASK-3V7L",
+    "title": "Investigate crash on mobile homepage",
+    "type": "bug",
+    "status": "blocked",
+    "priority": "high",
+    "reviewer": "Dana Lee"
+  },
+  {
+    "id": "TASK-8X2J",
+    "title": "Implement password reset flow",
+    "type": "feature",
+    "status": "in progress",
+    "priority": "high",
+    "reviewer": "Ethan Cruz"
+  },
+  {
+    "id": "TASK-4D9T",
+    "title": "Document API authentication method",
+    "type": "documentation",
+    "status": "todo",
+    "priority": "medium",
+    "reviewer": "Fiona Zhang"
+  },
+  {
+    "id": "TASK-5B6Y",
+    "title": "Fix modal close bug on Safari",
+    "type": "bug",
+    "status": "todo",
+    "priority": "medium",
+    "reviewer": "George Patel"
+  },
+  {
+    "id": "TASK-2A7M",
+    "title": "Add unit tests for utils.js",
+    "type": "feature",
+    "status": "done",
+    "priority": "low",
+    "reviewer": "Hannah Kim"
+  },
+  {
+    "id": "TASK-6R3L",
+    "title": "Revise onboarding documentation",
+    "type": "documentation",
+    "status": "in progress",
+    "priority": "medium",
+    "reviewer": "Ivan Lopez"
+  },
+  {
+    "id": "TASK-0W5N",
+    "title": "Fix issue with user profile picture upload",
+    "type": "bug",
+    "status": "in progress",
+    "priority": "high",
+    "reviewer": "Jasmine Ali"
+  },
+  {
+    "id": "TASK-7A8K",
+    "title": "Add support for multi-language",
+    "type": "feature",
+    "status": "todo",
+    "priority": "high",
+    "reviewer": "Khalid Chowdhury"
+  },
+  {
+    "id": "TASK-2P9H",
+    "title": "Refactor old API service file",
+    "type": "feature",
+    "status": "done",
+    "priority": "medium",
+    "reviewer": "Laura Greene"
+  },
+  {
+    "id": "TASK-4L6V",
+    "title": "Fix double-click submit issue",
+    "type": "bug",
+    "status": "todo",
+    "priority": "low",
+    "reviewer": "Marcus Brown"
+  },
+  {
+    "id": "TASK-3C9W",
+    "title": "Write docs for deployment process",
+    "type": "documentation",
+    "status": "done",
+    "priority": "low",
+    "reviewer": "Nina Rivers"
+  },
+  {
+    "id": "TASK-8D3N",
+    "title": "Add notifications for system events",
+    "type": "feature",
+    "status": "in progress",
+    "priority": "high",
+    "reviewer": "Omar Vance"
+  },
+  {
+    "id": "TASK-1B4C",
+    "title": "Investigate memory leak on dashboard",
+    "type": "bug",
+    "status": "blocked",
+    "priority": "high",
+    "reviewer": "Priya Desai"
+  },
+  {
+    "id": "TASK-9K2T",
+    "title": "Fix typo in settings page tooltip",
+    "type": "bug",
+    "status": "done",
+    "priority": "low",
+    "reviewer": "Quentin Zhao"
+  },
+  {
+    "id": "TASK-2N7B",
+    "title": "Document environment variable usage",
+    "type": "documentation",
+    "status": "todo",
+    "priority": "medium",
+    "reviewer": "Rita Wells"
+  },
+  {
+    "id": "TASK-6H5Q",
+    "title": "Build analytics dashboard",
+    "type": "feature",
+    "status": "in progress",
+    "priority": "high",
+    "reviewer": "Samir Hossain"
+  },
+  {
+    "id": "TASK-4R3F",
+    "title": "Fix broken image links on About page",
+    "type": "bug",
+    "status": "todo",
+    "priority": "medium",
+    "reviewer": "Tina Yamada"
+  }
+]
