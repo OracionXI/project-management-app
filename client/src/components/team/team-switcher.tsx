@@ -41,16 +41,16 @@ import { cn } from "@/lib/utils";
 
 const groups = [
   {
-    label: "Personal Account",
+    label: "Sector",
     teams: [
       {
-        label: "SyncVoid-1",
-        value: "personal",
+        label: "Sector-1",
+        value: "Sector-1",
       },
     ],
   },
   {
-    label: "Teams",
+    label: "Battelion",
     teams: [
       {
         label: "Battelion-1",
