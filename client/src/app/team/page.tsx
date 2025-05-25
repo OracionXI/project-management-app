@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 
-import { CalendarDateRangePicker } from "@/components/team/date-range-picker";
 import { Overview } from "@/components/team/overview";
 import { RecentSales } from "@/components/team/recent-sales";
 import TeamSwitcher from "@/components/team/team-switcher";
@@ -26,7 +25,6 @@ export default function Team() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
           <TeamSwitcher />
           <div className="flex flex-wrap items-center gap-2">
-            <CalendarDateRangePicker />
             <Button>Download</Button>
           </div>
         </div>
